@@ -1,1 +1,17 @@
 # test.11_9
+#include<stdio.h>                  
+typedef struct stu{                 //dont forget to use "typedef"
+char name[10];
+char sex[5];
+int score;
+int age;
+}stu;                               //pay attetion to this ","
+int main()                          //character string use ""
+{
+stu s={"Tom","man",100,18};         
+printf("%s\n",s.name);
+printf("%s\n",s.sex);
+printf("%d\n",s.score);
+printf("%d\n",s.age);
+return 0;
+}
