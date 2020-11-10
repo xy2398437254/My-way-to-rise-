@@ -15,3 +15,5 @@ printf("%d\n",s.score);
 printf("%d\n",s.age);
 return 0;
 }
+
+//2020.11.9 I glad to code in this website first time
