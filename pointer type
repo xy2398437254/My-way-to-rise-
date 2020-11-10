@@ -16,3 +16,13 @@ int(*pa)[5]= &arr2;//取出数组的地址 --较为关键--就是一个数组指
 int (*parr3[10]）[5];//关键！数组，一个数组10个元素分别指向5个元素；
 return 0;
 }
+//可以使用的方式
+//void test(int arr[])
+//{}
+//void test(int arr[10])
+//{}
+//void test(int *arr)//数组的的传参参数可以写成数组也可以写成指针、
+//如果是存放指针的数组
+//可以使用
+//void test2 （int *arr[]）
+//void test2（int **arr）
