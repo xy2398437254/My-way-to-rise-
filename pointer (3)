@@ -16,3 +16,19 @@ int main()
 	
 }
 //int **pp还可以作为一级指针存放的位置 即可以将一级指针的地址传过去     或者接收二级指针  一级指针数组传参也可以
+
+
+
+
+/*
+#include<stdio.h
+int main()
+{ 
+int arr1[10]={0};//可以接收的方式有 （int arr[]）（int arr[10]）(int *a);传出去的方式为arr
+int* arr2[20]={0};//接收的方式有（int **arr）（int *arr[20]）
+test (arr1);
+test(arr2);
+
+return 0;
+}
+*/
