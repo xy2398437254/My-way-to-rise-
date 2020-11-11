@@ -32,3 +32,6 @@ void test(int* p)
 	printf("%d",*p);
 
 }
+//函数指针
+//形式 （*p）（参数）；
+
