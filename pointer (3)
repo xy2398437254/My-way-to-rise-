@@ -1,0 +1,18 @@
+#include<stdio.h>
+void test(int **pp)
+{
+	printf("%d", **pp);
+}
+int main()
+{
+	//二级指针 用二级指针接 但是传的是地址
+	int n = 10;
+	int *p = &n;
+	//or     int **pp = &p;
+	
+	//test(&p);
+	return 0;
+
+	
+}
+//int **pp还可以作为一级指针存放的位置 即可以将一级指针的地址传过去     或者接收二级指针  一级指针数组传参也可以
