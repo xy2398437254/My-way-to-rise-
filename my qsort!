@@ -14,7 +14,7 @@ void swap(char* a, char* b, int width)
 	int i = 0; 
 	for (i = 0; i < width; i++)
 	{
-		char temp = *a;//char temp
+		char temp = *a;//char temp//这个char还得好好研究：一个一个字符地交换
 		*a = *b;
 		*b = temp;
 		*a++;//有没有*都一样
