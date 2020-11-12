@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+int cmp_int(const void *a, const void *b)//固定格式
+{
+	return *(int*)a - *(int*)b;//强行转化指针类型后进行解引用
+}
+
+
+
+int main()
+{
+	int arr[10] = {10,9,8,7,6,5,4,3,2,1};
+	qsort(arr,sizeof(arr)/sizeof(arr[0]),sizeof(arr[0]),cmp_int);//另一个头文件的 qsort 很好用
+	                                           //划重点 _______ //此处用的是函数指针 直接把函数名打进去就行了
+	for (int i = 0; i < 10; i++)
+	{
+		printf("%d", arr[i]);
+	}
+	return 0;
+
+}
