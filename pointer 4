@@ -18,4 +18,30 @@ int main()
 	}
 	return 0;
 
+}//下面是 结构体应用
+/*#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+struct stu{
+	char name[10];
+	int age;
+};
+
+int cmp(const void*e1, const void*e2)
+{
+	return strcmp(((struct stu*)e1)->name, ((struct stu*)e2)->name);
+	
 }
+
+int main()
+{
+	struct stu s[3] = { { "zh", 20 }, { "dsdad", 30 }, { "w", 50 } };//是按照首字母排的 
+	int sz = sizeof(s) / sizeof(s[0]);
+	qsort(s, sz, sizeof(s[0]), cmp);
+	for (int i = 0; i < 3; i++)
+	{
+
+		printf("%s\n", s[i].name);
+	}
+	return 0;
+} */
