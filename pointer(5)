@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+/*先写理解char* p=一串字符串，p里面存的是第一个字符的地址，但是p不在第一个字符地址处，此时strlen(&p)是指p处的地址，是随机值，&p和&p[0]的地址也不一样
+sizeof(p)是指针变量的大小 sizeof(p+0)计算的是第一个字符的地址 &p与p也不一样
+*/
+char *p="abcdef";
+printf("%d\n",sizeof(p));//4
+printf("%d\n",sizeof(p+1));//4
+printf("%d\n",sizeof(*p));//1
+printf("%d\n",sizeof(p[0]));//1
+printf("%d\n",sizeof(&p));//4
+printf("%d\n",sizeof(&p+1));//4
+printf("%d\n",sizeof(&p[0]+1));//4
+return 0;
+}
