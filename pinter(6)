@@ -14,8 +14,9 @@ int *p=arr;//整形指针指向arr！
 char*    *pa=a;//此时char** 是接收char*的地址 char*是指向类型 *pa说明他是个指针
 pa++是跳过一个char*类型 如同跳过一个int*
 
-
-
+F P N E
+p
+ 
 return 0;
 
 
