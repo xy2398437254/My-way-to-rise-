@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int my_strlen(char *str1)
+{
+	if (*str1 != '\0')
+		return 1 + my_strlen(str1+1);//+1
+	else
+		return 0;
+}
+
+
+int main()
+{
+	char arr1[] = { "abcdef" };
+	
+	int ret= my_strlen(arr1);//设数取值
+	printf("%d", ret);
+
+	return 0;
+}
