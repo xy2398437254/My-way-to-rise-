@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	char* p1 = "abcdef";
+	char* p2 = "sqwer";//字符串表示
+	char a[5] = { "acde" };//其中5包括\0
+	//strncpy(arr1,arr2,4)<-你让我拷贝几个就几个 如果字母不够就补\0 少几个补几个   strcpy(arr1，arr2)
+  //同理strncat也一样strncat(arr1,arr2,3)追加 只补一个\0
+	return 0;
+}
